@@ -1,0 +1,102 @@
+/* ===== General page setup ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  padding: 0 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.demo-block {
+  max-width: 700px;
+  margin: 0 auto 25px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 18px 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.demo-block h2 {
+  margin-top: 0;
+  color: #2980b9;
+  font-size: 1.1rem;
+}
+
+/* 1. ELEMENT SELECTOR: targets every <p> tag on the page */
+p {
+  line-height: 1.5;
+  color: #333;
+}
+
+/* 2. CLASS SELECTOR: only applies to elements with class="highlight" */
+.highlight {
+  background: #fdebd0;
+  padding: 6px 10px;
+  border-left: 4px solid #e67e22;
+}
+
+/* 3. ID SELECTOR: applies only to the single unique element with this id */
+#special-note {
+  font-weight: bold;
+  color: #8e44ad;
+  border: 1px dashed #8e44ad;
+  padding: 8px;
+}
+
+/* 4. ATTRIBUTE SELECTOR: targets any <a> with a target="_blank" attribute */
+a[target="_blank"] {
+  color: #e74c3c;
+  font-weight: 600;
+  text-decoration: underline dotted;
+}
+
+/* 5. CHILD COMBINATOR ( > ): only DIRECT <li> children of .child-list,
+   not the nested <li> inside the inner <ul> */
+.child-list > li {
+  background: #d5f5e3;
+  padding: 6px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+}
+
+/* 6. ADJACENT SIBLING COMBINATOR ( + ): only the <p> immediately
+   following an <h3> inside this section */
+.combinator-demo h3 + p {
+  color: #16a085;
+  font-weight: bold;
+}
+
+/* 7. GENERAL SIBLING COMBINATOR ( ~ ): every <p> that comes after
+   an <h3>, not just the first one */
+.combinator-demo h3 ~ p {
+  background: #eafaf1;
+}
+
+/* 8. DESCENDANT SELECTOR: any <p> nested anywhere inside .outer-box,
+   no matter how deep */
+.outer-box p {
+  color: #2c3e50;
+  font-style: italic;
+}
+
+.outer-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+}

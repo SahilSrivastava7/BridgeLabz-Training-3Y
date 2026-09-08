@@ -1,0 +1,83 @@
+/* ===== General page setup ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+footer {
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ===== Flexbox distributes all examples evenly ===== */
+.effects-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  padding: 50px 30px;
+}
+
+/* Shared base style for every combined-effect card/button */
+.fx-card {
+  border: none;
+  padding: 22px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* ----- 1. Grows slightly on hover ----- */
+.fx-grow:hover {
+  transform: scale(1.12);
+  background: #eafaf1;
+}
+
+/* ----- 2. Changes color on hover ----- */
+.fx-color:hover {
+  background: #3498db;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* ----- 3. Rotates slightly on hover ----- */
+.fx-rotate:hover {
+  transform: rotate(-4deg) scale(1.05);
+  background: #f9e79f;
+}
+
+/* ----- 4. Lifts up with a stronger shadow on hover ----- */
+.fx-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  background: #fdecea;
+}
+
+/* :active gives immediate press-down feedback on every card */
+.fx-card:active {
+  transform: scale(0.95);
+}
+
+/* :focus keeps keyboard accessibility visible */
+.fx-card:focus {
+  outline: 3px solid #85c1e9;
+  outline-offset: 3px;
+}

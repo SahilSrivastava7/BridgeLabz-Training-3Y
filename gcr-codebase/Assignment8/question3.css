@@ -1,0 +1,82 @@
+/* ===== General page setup ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* ===== Grid layout for the gallery ===== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.img-card {
+  margin: 0;
+  text-align: center;
+}
+
+.img-wrap {
+  position: relative;
+  overflow: hidden;         /* keeps scaled image inside rounded corners */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.img-wrap img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.35s ease-in-out;
+}
+
+/* Semi-transparent dark overlay, invisible until hover */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.35s ease-in-out;
+}
+
+.img-card:hover img {
+  transform: scale(1.1);     /* required scale-up effect */
+}
+
+.img-card:hover .overlay {
+  background: rgba(0, 0, 0, 0.35); /* darkening overlay on hover */
+}
+
+figcaption {
+  margin-top: 10px;
+  font-weight: 500;
+  color: #34495e;
+}
+
+/* ===== Responsive behavior: single column below 700px ===== */
+@media (max-width: 700px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

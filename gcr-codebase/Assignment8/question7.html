@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 7 - UI Components</title>
+  <link rel="stylesheet" href="question7.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="ui-card">
+      <h1>Quick Search</h1>
+
+      <form class="search-form">
+        <label for="search-input" class="visually-hidden">Search</label>
+        <input type="text" id="search-input" placeholder="Search anything..." />
+        <button type="submit" class="btn">Search</button>
+      </form>
+
+      <div class="options-row">
+        <label for="category">Category</label>
+        <select id="category" name="category">
+          <option value="all">All Categories</option>
+          <option value="articles">Articles</option>
+          <option value="videos">Videos</option>
+          <option value="products">Products</option>
+        </select>
+      </div>
+
+      <div class="action-row">
+        <button class="btn btn-alt">Filter</button>
+        <button class="btn btn-alt">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Assignment 8 &mdash; Question 7</p>
+  </footer>
+</body>
+</html>

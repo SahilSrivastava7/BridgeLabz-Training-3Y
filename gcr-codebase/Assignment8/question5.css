@@ -1,0 +1,125 @@
+/* ===== General page setup ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+footer {
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.hint {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ===== Flexbox row keeps buttons aligned with consistent spacing ===== */
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding: 40px;
+}
+
+/* ===== Shared base styling for all buttons ===== */
+.btn {
+  padding: 12px 26px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* ----- Primary button ----- */
+.btn-primary {
+  background: #3498db;
+  color: #fff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.btn-primary:active {
+  background: #1f618d;
+  transform: scale(0.97);
+}
+
+.btn-primary:focus {
+  outline: 3px solid #85c1e9;
+  outline-offset: 2px;
+}
+
+/* ----- Secondary button ----- */
+.btn-secondary {
+  background: #95a5a6;
+  color: #fff;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background: #7f8c8d;
+}
+
+.btn-secondary:active {
+  background: #626567;
+  transform: scale(0.97);
+}
+
+.btn-secondary:focus {
+  outline: 3px solid #d5dbdb;
+  outline-offset: 2px;
+}
+
+/* ----- Outline button ----- */
+.btn-outline {
+  background: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+  box-shadow: none;
+}
+
+.btn-outline:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-outline:active {
+  background: #21618c;
+  border-color: #21618c;
+}
+
+.btn-outline:focus {
+  outline: 3px solid #85c1e9;
+  outline-offset: 2px;
+}
+
+/* ----- Disabled button state (uses the real disabled attribute) ----- */
+.btn:disabled {
+  background: #bdc3c7;
+  color: #7f8c8d;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+}
+
+.btn:disabled:hover {
+  background: #bdc3c7; /* no hover reaction when disabled */
+}

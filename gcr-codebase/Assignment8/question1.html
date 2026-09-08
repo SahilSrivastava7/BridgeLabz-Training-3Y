@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 1 - Pseudo-Classes</title>
+  <link rel="stylesheet" href="question1.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Pseudo-Classes Demonstration</h1>
+    <p>Examples of :hover, :focus, :active and :nth-child()</p>
+  </header>
+
+  <main>
+    <section class="row">
+
+      <article class="example">
+        <a href="#" class="demo-link">Hover / Focus me</a>
+        <p class="note">This link changes color on <code>:hover</code> and gets an outline on <code>:focus</code> (try clicking then pressing Tab).</p>
+      </article>
+
+      <article class="example">
+        <button class="demo-btn">Click me</button>
+        <p class="note"><code>:active</code> darkens the button while it is being pressed down.</p>
+      </article>
+
+      <article class="example">
+        <ul class="demo-list">
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+          <li>List item four</li>
+        </ul>
+        <p class="note"><code>:nth-child(even)</code> gives every second item a shaded background.</p>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Assignment 8 &mdash; Question 1</p>
+  </footer>
+</body>
+</html>

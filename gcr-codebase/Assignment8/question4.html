@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 4 - CSS Selectors Practice</title>
+  <link rel="stylesheet" href="question4.css" />
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice</h1>
+    <p>Each section below demonstrates a different type of selector</p>
+  </header>
+
+  <main>
+
+    <section class="demo-block">
+      <h2>1. Element Selector</h2>
+      <p>Every &lt;p&gt; element on this page is styled by the element selector.</p>
+    </section>
+
+    <section class="demo-block">
+      <h2>2. Class Selector</h2>
+      <p class="highlight">This paragraph uses the <code>.highlight</code> class.</p>
+      <p>This paragraph does not use the class, so it looks different.</p>
+    </section>
+
+    <section class="demo-block">
+      <h2>3. ID Selector</h2>
+      <p id="special-note">This paragraph is styled using the unique <code>#special-note</code> ID.</p>
+    </section>
+
+    <section class="demo-block">
+      <h2>4. Attribute Selector</h2>
+      <a href="https://example.com" target="_blank">External link (styled via attribute selector)</a>
+    </section>
+
+    <section class="demo-block combinator-demo">
+      <h2>5. Child Combinator ( &gt; )</h2>
+      <ul class="child-list">
+        <li>Direct child item (styled)</li>
+        <li>Direct child item (styled)
+          <ul>
+            <li>Nested item (NOT styled by child combinator)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="demo-block combinator-demo">
+      <h2>6. Adjacent Sibling Combinator ( + )</h2>
+      <h3>Heading</h3>
+      <p>Only this paragraph, immediately after the heading, gets styled.</p>
+      <p>This second paragraph is unaffected.</p>
+    </section>
+
+    <section class="demo-block combinator-demo">
+      <h2>7. General Sibling Combinator ( ~ )</h2>
+      <h3>Marker Heading</h3>
+      <p>All sibling paragraphs after the marker heading are styled.</p>
+      <p>This one too, even though it isn't directly adjacent.</p>
+    </section>
+
+    <section class="demo-block combinator-demo">
+      <h2>8. Descendant Selector</h2>
+      <div class="outer-box">
+        <p>Any paragraph nested anywhere inside .outer-box is styled.</p>
+        <div>
+          <p>Even this deeply nested paragraph is affected.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Assignment 8 &mdash; Question 4</p>
+  </footer>
+</body>
+</html>

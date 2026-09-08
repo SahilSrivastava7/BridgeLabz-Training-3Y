@@ -1,0 +1,91 @@
+/* ===== General page setup ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px 10px;
+}
+
+header h1 {
+  color: #2c3e50;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+main {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== Flexbox centers all tooltip examples on the page ===== */
+.tooltip-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+}
+
+/* Each tooltip trigger needs relative positioning so the
+   tooltip text (absolute) can be placed relative to it */
+.tooltip-item {
+  position: relative;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Tooltip bubble: hidden by default, positioned above the trigger */
+.tooltip-text {
+  position: absolute;
+  bottom: 100%;                 /* places tooltip above the element */
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: #1c1c1c;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease-in-out;  /* required smooth fade */
+}
+
+/* Small arrow under the tooltip pointing to the trigger */
+.tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #1c1c1c transparent transparent transparent;
+}
+
+.tooltip-item:hover .tooltip-text {
+  opacity: 1;                    /* fades in on hover */
+  transform: translateX(-50%) translateY(-14px);
+}
+
+.tooltip-item:hover {
+  background: #2c3e50;
+}

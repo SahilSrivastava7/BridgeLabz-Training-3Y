@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Question 8 - Box-Sizing Comparison</title>
+  <link rel="stylesheet" href="question8.css" />
+</head>
+<body>
+  <header>
+    <h1>Box-Sizing Comparison</h1>
+    <p>Same declared width and padding, two very different results</p>
+  </header>
+
+  <main class="compare-area">
+    <div class="box-pair">
+
+      <div class="box box-default">
+        <strong>content-box (default)</strong>
+        <p>width: 200px + padding adds extra size on top of it.</p>
+      </div>
+
+      <div class="box box-border">
+        <strong>border-box</strong>
+        <p>width: 200px includes the padding, so it stays 200px total.</p>
+      </div>
+
+    </div>
+
+    <p class="explanation">
+      By default, an element's <code>width</code> only defines the content area &mdash;
+      padding and border are added on top, making the element visually larger than
+      its declared width. With <code>box-sizing: border-box</code>, the padding and
+      border are included inside that declared width, so the element's total
+      rendered size never exceeds what you specified. Both boxes above have the
+      exact same <code>width</code> and <code>padding</code> values, but the
+      default box ends up visibly wider than the border-box one.
+    </p>
+  </main>
+
+  <footer>
+    <p>Assignment 8 &mdash; Question 8</p>
+  </footer>
+</body>
+</html>

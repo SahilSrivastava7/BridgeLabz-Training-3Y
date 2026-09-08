@@ -1,0 +1,184 @@
+/* ===== General page setup ===== */
+* {
+  box-sizing: border-box; /* consistent box-sizing throughout this page */
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.site-header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 18px;
+}
+
+.site-header nav a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.site-header nav a:hover {
+  color: #3498db;
+}
+
+.site-header nav a:focus {
+  outline: 2px solid #3498db;
+  outline-offset: 3px;
+}
+
+/* ===== Main content area ===== */
+.content-area {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+/* ===== Main card ===== */
+.main-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #3498db;
+  object-fit: cover;
+}
+
+.main-card h2 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* ===== Form ===== */
+.signup-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+
+.signup-form label {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 6px;
+}
+
+.signup-form input {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.signup-form input:hover {
+  border-color: #aaa;
+}
+
+.signup-form input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+}
+
+.form-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #3498db;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.btn-primary:focus {
+  outline: 3px solid #85c1e9;
+  outline-offset: 2px;
+}
+
+.btn-secondary {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.btn-secondary:hover {
+  background: #dfe6e9;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #2c3e50;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 14px;
+  font-size: 0.85rem;
+}
+
+/* ===== Responsive behavior ===== */
+@media (max-width: 500px) {
+  .site-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-card {
+    padding: 20px;
+  }
+}
