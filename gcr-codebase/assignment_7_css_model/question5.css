@@ -1,0 +1,44 @@
+/* Q5: Advanced selectors demonstrated and commented by selector type. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f8fafc; color: #172033; }
+main { width: min(900px, 92%); margin: 50px auto; }
+.selector-demo { background: white; padding: 30px; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,.1); }
+
+/* Attribute selector: targets inputs whose type is exactly text. */
+input[type="text"] { border: 3px solid #2563eb; }
+
+/* Attribute selector: targets links whose href begins with https. */
+a[href^="https"] { text-decoration: underline; }
+
+/* Pseudo-class :hover */
+a:hover { background: #dbeafe; }
+
+/* Pseudo-class :focus */
+input:focus { outline: 3px solid #f59e0b; outline-offset: 2px; }
+
+/* Pseudo-class :nth-child() */
+.items li:nth-child(2) { font-weight: 700; background: #ecfccb; }
+
+/* Pseudo-elements: generated content before and after the heading. */
+h1::before { content: "★ "; }
+h1::after { content: " ★"; }
+
+/* Descendant combinator: any span inside an li. */
+.items li span { color: #7c3aed; }
+
+/* Child combinator > : only direct p children of .parent. */
+.parent > p { border-left: 4px solid #2563eb; padding-left: 10px; }
+
+/* Adjacent sibling combinator + : first p immediately after another p. */
+.parent p + p { background: #fef3c7; }
+
+/* General sibling combinator ~ : paragraphs after the first p. */
+.parent p:first-child ~ p { margin-left: 20px; }
+
+/* Another pseudo-class example: every odd list item. */
+.items li:nth-child(odd) { padding: 8px; }
+
+input, a { padding: 10px; margin: 7px; }
+nav { margin: 25px 0; }
+a { display: inline-block; color: #1d4ed8; }
+.items { line-height: 1.9; }

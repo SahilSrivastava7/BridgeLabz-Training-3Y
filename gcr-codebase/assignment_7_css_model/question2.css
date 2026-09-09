@@ -1,0 +1,12 @@
+/* Q2: Size units, min/max constraints and overflow. */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #172033; background: #eef2ff; }
+.layout { min-height: 100vh; display: flex; justify-content: center; align-items: center; gap: 25px; flex-wrap: wrap; padding: 35px; }
+.box { display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: auto; border-radius: 16px; color: white; text-align: center; }
+.px-box { width: 220px; height: 150px; min-height: 120px; background: #2563eb; }
+.percent-box { width: 30%; max-width: 320px; min-height: 190px; background: #059669; padding: 1em; }
+.vh-box { width: 260px; height: 25vh; min-height: 170px; max-width: 30em; padding: 2em; background: #c2410c; }
+.box p { margin: 8px; }
+@media (max-width: 700px) {
+  .percent-box { width: 80%; }
+}

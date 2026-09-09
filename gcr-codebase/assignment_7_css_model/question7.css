@@ -1,0 +1,22 @@
+/* Q7: Font families, weights, sizes, spacing and pseudo-elements. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f8fafc; color: #202938; }
+main { width: min(850px, 92%); margin: 55px auto; }
+article { background: white; padding: 45px; border-radius: 18px; box-shadow: 0 10px 25px rgba(0,0,0,.08); }
+h1 { font-family: Georgia, serif; font-size: 2.5rem; letter-spacing: 1px; text-align: center; }
+p { font-size: 1.05rem; line-height: 1.8; text-align: justify; margin: 22px 0; }
+.lead { font-family: Arial, sans-serif; font-weight: 700; font-size: 1.25rem; letter-spacing: .5px; }
+.serif { font-family: Georgia, serif; font-weight: 400; }
+.sans { font-family: Arial, sans-serif; font-weight: 600; }
+.mono { font-family: "Courier New", monospace; font-weight: 500; }
+
+/* Pseudo-element: emphasize the first letter. */
+article p:first-of-type::first-letter { font-size: 3rem; font-weight: 800; float: left; line-height: .8; margin-right: 7px; }
+
+/* Pseudo-element: style the first line of the article's lead paragraph. */
+.lead::first-line { letter-spacing: 1.5px; }
+
+/* Inline semantic elements receive custom colors. */
+mark { background: #fde68a; color: #7c2d12; padding: 2px 5px; }
+strong { color: #1d4ed8; }
+em { color: #9333ea; }

@@ -1,0 +1,15 @@
+/* Q1: Border styles, padding, Flexbox and hover transition. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; font-family: Arial, sans-serif; background: #f3f6fa; color: #182230; }
+main { padding: 50px 24px; text-align: center; }
+h1 { margin-bottom: 36px; }
+.box-row { display: flex; justify-content: center; align-items: stretch; flex-wrap: wrap; gap: 22px; }
+.demo { width: 180px; min-height: 150px; background: white; transition: border-color 0.35s ease; }
+.demo:hover { border-color: #e63946; }
+.solid { border: 5px solid #2563eb; padding: 10px; }
+.dashed { border: 5px dashed #16a34a; padding: 20px; }
+.double { border: 8px double #9333ea; padding: 30px; }
+.groove { border: 8px groove #d97706; padding: 15px; }
+.rounded { border: 5px solid #0891b2; border-radius: 28px; padding: 22px; }
+.demo h2 { margin: 18px 0 10px; }
+.demo p { margin: 0; }

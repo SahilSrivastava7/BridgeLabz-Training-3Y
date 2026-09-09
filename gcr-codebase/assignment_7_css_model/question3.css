@@ -1,0 +1,11 @@
+/* Q3: Fixed header/footer and a fixed-background parallax-like section. */
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; font-family: Arial, sans-serif; color: white; }
+header, footer { position: fixed; left: 0; width: 100%; z-index: 10; text-align: center; background: rgba(10, 18, 35, 0.94); padding: 15px; }
+header { top: 0; }
+footer { bottom: 0; }
+main { padding-top: 86px; padding-bottom: 68px; }
+section { min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 50px 20px; }
+.linear { background: linear-gradient(120deg, #1d4ed8, #7c3aed, #db2777); }
+.radial { background: radial-gradient(circle at center, #22c55e, #0f766e 45%, #052e16); background-attachment: fixed; }
+section p { max-width: 650px; font-size: 1.1rem; line-height: 1.7; }

@@ -1,0 +1,17 @@
+/* Q8: Visual layers plus a comparison of default content-box and border-box. */
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; background: #eef2f7; color: #172033; }
+main { width: min(850px, 94%); text-align: center; padding: 30px 0; }
+.demo-area { display: flex; justify-content: center; margin: 30px 0; }
+.margin-layer { width: 440px; padding: 28px; background: #fde68a; outline: 2px dashed #b45309; }
+.border-layer { padding: 20px; background: #bfdbfe; border: 12px solid #1d4ed8; position: relative; }
+.padding-layer { padding: 30px; background: #bbf7d0; }
+.content-layer { min-height: 130px; display: flex; flex-direction: column; justify-content: center; gap: 10px; background: #f9a8d4; }
+.layer-label { display: block; font-size: .75rem; font-weight: 800; margin-bottom: 7px; }
+.notes { text-align: left; line-height: 1.6; background: white; padding: 20px 28px; border-radius: 12px; }
+.notes p { margin: 8px 0; }
+@media (max-width: 550px) {
+  .margin-layer { width: 95%; padding: 15px; }
+  .border-layer { padding: 12px; border-width: 8px; }
+  .padding-layer { padding: 18px; }
+}
