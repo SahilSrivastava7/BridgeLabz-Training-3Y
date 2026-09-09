@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URI Encoding</title><link rel="stylesheet" href="question6.css">
+</head>
+<body>
+<header><h1>URI Encoding</h1><p>Reserved characters and JavaScript encoding functions</p></header>
+<main>
+<section class="card">
+  <h2>Reserved Characters</h2>
+  <table>
+    <tr><th>Character</th><th>Encoded Value</th><th>Example</th></tr>
+    <tr><td>Space</td><td>%20</td><td>Hello World → Hello%20World</td></tr>
+    <tr><td>#</td><td>%23</td><td>page#section → page%23section</td></tr>
+    <tr><td>&amp;</td><td>%26</td><td>name=Tom&amp;age=25 → name=Tom%26age=25</td></tr>
+    <tr><td>?</td><td>%3F</td><td>search?q=test → search%3Fq%3Dtest</td></tr>
+    <tr><td>/</td><td>%2F</td><td>folder/file → folder%2Ffile</td></tr>
+  </table>
+</section>
+<section class="card">
+  <h2>encodeURI() vs encodeURIComponent()</h2>
+  <pre><code>let url = "https://example.com/search?q=HTML &amp; CSS";
+let encodedURL = encodeURI(url);
+
+let component = "HTML &amp; CSS";
+let encodedComponent = encodeURIComponent(component);</code></pre>
+  <button onclick="showEncoding()">Run Encoding Example</button>
+  <div id="result" class="result">Click the button to see the result.</div>
+</section>
+</main>
+<footer>URI Encoding Demonstration</footer>
+<script>
+function showEncoding() {
+  const url = "https://example.com/search?q=HTML & CSS";
+  const component = "HTML & CSS";
+  document.getElementById("result").innerHTML =
+    "<strong>encodeURI:</strong> " + encodeURI(url) +
+    "<br><strong>encodeURIComponent:</strong> " + encodeURIComponent(component);
+}
+</script>
+</body>
+</html>

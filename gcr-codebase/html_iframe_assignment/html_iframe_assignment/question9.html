@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Attributes and Methods</title><link rel="stylesheet" href="question9.css">
+</head>
+<body>
+<header><h1>Input Attributes &amp; Form Methods</h1></header>
+<main>
+<section class="card">
+  <h2>Input Attributes</h2>
+  <form>
+    <label>type: <input type="email" name="email" placeholder="Enter email" required></label>
+    <label>readonly: <input type="text" value="Read only value" readonly></label>
+    <label>disabled: <input type="text" value="Disabled field" disabled></label>
+    <label>pattern: <input type="text" pattern="[A-Za-z]{3,}" placeholder="At least 3 letters"></label>
+    <label>maxlength: <input type="text" maxlength="20" placeholder="Maximum 20 characters"></label>
+  </form>
+  <table>
+    <tr><th>Attribute</th><th>Purpose</th></tr>
+    <tr><td>type</td><td>Text, email, password, number, etc.</td></tr>
+    <tr><td>name</td><td>Server identifier</td></tr><tr><td>placeholder</td><td>Hint text</td></tr>
+    <tr><td>required</td><td>Mandatory input</td></tr><tr><td>readonly</td><td>Non-editable input</td></tr>
+    <tr><td>disabled</td><td>Inactive field</td></tr><tr><td>pattern</td><td>Regex validation</td></tr>
+    <tr><td>maxlength</td><td>Maximum characters</td></tr>
+  </table>
+</section>
+<section class="card">
+  <h2>GET vs POST</h2>
+  <table>
+    <tr><th>Method</th><th>Description</th><th>Use Case</th></tr>
+    <tr><td>GET</td><td>Data in URL</td><td>Search/filter</td></tr>
+    <tr><td>POST</td><td>Data in request body</td><td>Login, signup, payments</td></tr>
+  </table>
+  <form action="/search" method="get"><label>GET search <input name="q" placeholder="Search"></label><button>Search</button></form>
+</section>
+</main>
+<footer>Input Attributes and Form Methods</footer>
+</body>
+</html>

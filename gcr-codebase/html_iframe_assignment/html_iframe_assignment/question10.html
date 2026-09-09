@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML registration form">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="question10.css">
+</head>
+<body>
+<header><h1>Student Registration</h1></header>
+<main>
+<section class="card">
+  <h2>Sign Up</h2>
+  <p>Create your student profile using the HTML form elements demonstrated in the lecture.</p>
+  <form action="/register" method="post">
+    <fieldset>
+      <legend>Sign Up</legend>
+      <label for="user">Username:</label>
+      <input type="text" id="user" name="username" required placeholder="Enter username" maxlength="20">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter email">
+
+      <fieldset class="gender">
+        <legend>Gender:</legend>
+        <label><input type="radio" name="gender" value="M"> Male</label>
+        <label><input type="radio" name="gender" value="F"> Female</label>
+      </fieldset>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+      </select>
+
+      <button type="submit">Register</button>
+    </fieldset>
+  </form>
+</section>
+</main>
+<footer>Proper grouping, labeling and validation improve form usability.</footer>
+</body>
+</html>

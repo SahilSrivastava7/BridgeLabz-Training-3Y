@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy HTML Frames</title><link rel="stylesheet" href="question7.css">
+</head>
+<body>
+<header><h1>HTML Frames (Legacy)</h1></header>
+<main>
+<section class="card">
+  <h2>What Were Frames?</h2>
+  <ul>
+    <li>Frames divided the browser window into multiple sections.</li>
+    <li>Each section could display a different HTML document.</li>
+    <li>Different frames could be scrolled or navigated independently.</li>
+  </ul>
+  <div class="warning">The PDF states that frames are deprecated in HTML5.</div>
+</section>
+<section class="card">
+  <h2>Legacy Example</h2>
+  <pre><code>&lt;frameset cols="30%,70%"&gt;
+  &lt;frame src="menu.html"&gt;
+  &lt;frame src="content.html"&gt;
+&lt;/frameset&gt;</code></pre>
+  <p>Modern pages should use semantic HTML + CSS for layout and <code>&lt;iframe&gt;</code> for embedded content.</p>
+</section>
+</main>
+<footer>Legacy Frames Reference</footer>
+</body>
+</html>

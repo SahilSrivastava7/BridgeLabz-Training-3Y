@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms and Elements</title><link rel="stylesheet" href="question8.css">
+</head>
+<body>
+<header><h1>HTML Forms &amp; Form Elements</h1></header>
+<main>
+<section class="card">
+  <h2>Form Syntax &amp; Attributes</h2>
+  <pre><code>&lt;form action="/submit" method="post"
+  enctype="multipart/form-data" autocomplete="off"&gt;
+&lt;/form&gt;</code></pre>
+  <table>
+    <tr><th>Attribute</th><th>Purpose</th></tr>
+    <tr><td>action</td><td>Server URL</td></tr><tr><td>method</td><td>GET/POST</td></tr>
+    <tr><td>enctype</td><td>File encoding</td></tr><tr><td>autocomplete</td><td>Browser suggestions</td></tr>
+    <tr><td>target</td><td>Response location</td></tr>
+  </table>
+</section>
+<section class="card">
+  <h2>Common Form Elements</h2>
+  <form action="/submit" method="post" autocomplete="off">
+    <fieldset>
+      <legend>User Information</legend>
+      <label for="name">Name</label><input id="name" name="username" type="text" placeholder="Enter name">
+      <label for="message">Message</label><textarea id="message" rows="4"></textarea>
+      <label for="course">Course</label>
+      <select id="course" name="course"><option>HTML</option><option>CSS</option><option>JavaScript</option></select>
+      <label for="browser">Browser</label>
+      <input id="browser" list="browsers" name="browser">
+      <datalist id="browsers"><option value="Chrome"><option value="Firefox"><option value="Edge"></datalist>
+      <output id="result">Form output example</output>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</section>
+</main>
+<footer>HTML Forms Demonstration</footer>
+</body>
+</html>

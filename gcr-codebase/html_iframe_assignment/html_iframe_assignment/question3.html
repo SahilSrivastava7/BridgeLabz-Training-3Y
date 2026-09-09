@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Security</title><link rel="stylesheet" href="question3.css">
+</head>
+<body>
+<header><h1>Iframe Security</h1><p>Sandbox, HTTPS and referrer policy</p></header>
+<main>
+<section class="card">
+  <h2>Security Risks</h2>
+  <ul><li>Clickjacking</li><li>XSS</li><li>Phishing</li></ul>
+  <div class="note">Avoid embedding untrusted content without restrictions.</div>
+</section>
+<section class="card">
+  <h2>Restricted Iframe</h2>
+  <iframe src="https://example.com"
+          sandbox="allow-scripts allow-same-origin"
+          referrerpolicy="no-referrer"
+          title="Restricted example"></iframe>
+  <pre><code>&lt;iframe
+  src="https://example.com"
+  sandbox="allow-scripts allow-same-origin"
+  referrerpolicy="no-referrer"&gt;
+&lt;/iframe&gt;</code></pre>
+  <p>Use HTTPS URLs, limit permissions, use sandbox, and set referrerpolicy.</p>
+</section>
+</main>
+<footer>Iframe Security Demonstration</footer>
+</body>
+</html>

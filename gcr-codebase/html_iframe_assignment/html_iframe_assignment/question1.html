@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HTML iframe attributes demonstration">
+  <title>HTML Iframe Basics</title>
+  <link rel="stylesheet" href="question1.css">
+</head>
+<body>
+<header><h1>HTML Iframe Demonstration</h1><p>Embedding another HTML document</p></header>
+<main>
+  <section class="card">
+    <h2>Basic Iframe</h2>
+    <p>An <code>&lt;iframe&gt;</code> embeds another HTML document inside the current page.</p>
+    <iframe src="https://www.example.com" width="600" height="300"
+            frameborder="0" title="Example website"></iframe>
+  </section>
+  <section class="card">
+    <h2>Iframe Attributes</h2>
+    <table>
+      <tr><th>Attribute</th><th>Purpose</th><th>Example</th></tr>
+      <tr><td>src</td><td>URL of embedded page</td><td><code>src="https://example.com"</code></td></tr>
+      <tr><td>width / height</td><td>Iframe dimensions</td><td><code>width="800" height="600"</code></td></tr>
+      <tr><td>frameborder</td><td>Border visibility</td><td><code>frameborder="0"</code></td></tr>
+      <tr><td>allowfullscreen</td><td>Allows fullscreen mode</td><td><code>allowfullscreen</code></td></tr>
+      <tr><td>name</td><td>Target for links/forms</td><td><code>name="iframe1"</code></td></tr>
+      <tr><td>sandbox</td><td>Restricts iframe actions</td><td><code>sandbox="allow-scripts"</code></td></tr>
+      <tr><td>referrerpolicy</td><td>Controls referrer information</td><td><code>referrerpolicy="no-referrer"</code></td></tr>
+    </table>
+  </section>
+</main>
+<footer>HTML Iframes • Practical Assignment</footer>
+</body>
+</html>
