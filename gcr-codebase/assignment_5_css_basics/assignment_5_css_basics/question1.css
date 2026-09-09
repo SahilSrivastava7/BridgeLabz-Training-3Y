@@ -1,0 +1,66 @@
+/* Page uses Flexbox so the footer stays at the bottom. */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3f8;
+  color: #172033;
+}
+.page { min-height: 100vh; display: flex; flex-direction: column; }
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #10243e;
+  color: white;
+}
+.site-header h1 { margin: 0; font-size: 1.5rem; }
+nav { display: flex; gap: 1.4rem; }
+nav a { color: white; text-decoration: none; }
+nav a:hover { color: #8dd7ff; }
+main { flex: 1; padding-top: 90px; }
+.hero {
+  min-height: 70vh;
+  padding: 8vh 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8%;
+}
+.bio { max-width: 620px; }
+.eyebrow { font-size: 1.1em; color: #2b6cb0; font-weight: bold; }
+.hero h2 { font-size: clamp(2rem, 5vw, 4rem); margin: .4rem 0; }
+.hero p { font-size: 1.1rem; line-height: 1.8; }
+.hero img {
+  width: 32%;
+  min-width: 220px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 12px 22px;
+  background: #2b6cb0;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+.content { width: 80%; margin: 2rem auto; padding: 3rem; background: white; border-radius: 14px; }
+footer { text-align: center; padding: 1.5rem; background: #10243e; color: white; }
+@media (max-width: 700px) {
+  .site-header { flex-direction: column; gap: .7rem; }
+  main { padding-top: 125px; }
+  .hero { flex-direction: column-reverse; text-align: center; }
+  .hero img { width: 55%; }
+}

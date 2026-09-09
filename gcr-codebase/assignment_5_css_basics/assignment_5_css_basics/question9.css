@@ -1,0 +1,13 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #ddd8ce; color: #25221e; font-family: Georgia, serif; }
+.magazine { width: min(1150px, 92%); margin: 40px auto; padding: 45px; background: #f8f5ee; }
+.magazine h1 { column-span: all; text-align: center; letter-spacing: 5px; border-bottom: 3px solid #25221e; padding-bottom: 20px; margin-top: 0; }
+.magazine article { column-count: 3; column-gap: 35px; }
+.magazine p { text-align: justify; line-height: 1.75; margin-top: 0; margin-bottom: 20px; }
+.magazine img { float: left; width: 48%; margin: 0 18px 10px 0; border-radius: 6px; }
+@media (max-width: 850px) { .magazine article { column-count: 2; } }
+@media (max-width: 600px) {
+  .magazine { padding: 25px; }
+  .magazine article { column-count: 1; }
+  .magazine img { width: 100%; float: none; margin: 0 0 18px; }
+}

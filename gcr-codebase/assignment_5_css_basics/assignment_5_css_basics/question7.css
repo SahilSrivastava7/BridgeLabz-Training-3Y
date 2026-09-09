@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #eaf2f8; color: #172033; }
+.contact-page { min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 30px; }
+.contact-form { width: min(520px, 100%); padding: 35px; background: white; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,.1); }
+.contact-form h1 { margin-top: 0; }
+.contact-form label { display: block; margin: 18px 0 7px; font-weight: bold; }
+.contact-form input, .contact-form textarea { width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 2px 7px rgba(0,0,0,.05); font: inherit; }
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: #2b6cb0; box-shadow: 0 0 0 3px rgba(43,108,176,.15); }
+button { margin-top: 22px; width: 100%; padding: 13px; border: 0; border-radius: 8px; background: #17324d; color: white; cursor: pointer; }
+button:hover { background: #2b6cb0; }

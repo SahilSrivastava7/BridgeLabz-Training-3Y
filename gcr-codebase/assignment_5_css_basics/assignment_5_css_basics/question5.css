@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f6fa; color: #172033; }
+header { text-align: center; padding: 50px 20px 30px; }
+header h1 { font-size: 2.7rem; margin: 0; }
+.plans { width: min(1100px, 92%); margin: 20px auto 60px; display: flex; align-items: stretch; gap: 24px; }
+.plan { position: relative; flex: 1; display: flex; flex-direction: column; padding: 32px; border: 2px solid #d7dee8; border-radius: 16px; background: white; box-shadow: 0 10px 25px rgba(0,0,0,.07); transition: transform .3s ease, background-color .3s ease; }
+.plan:hover { transform: scale(1.04); background: #f0f7ff; }
+.plan h2 { text-align: center; font-size: 1.7rem; }
+.price { text-align: center; font-size: 2.5rem; font-weight: bold; }
+.price span { font-size: .9rem; font-weight: normal; color: #667085; }
+.plan ul { flex: 1; padding-left: 20px; line-height: 2; }
+.plan a { display: block; text-align: center; padding: 12px; border-radius: 8px; background: #17324d; color: white; text-decoration: none; }
+.popular { border: 3px solid #2b6cb0; }
+.badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); padding: 5px 12px; border-radius: 20px; background: #2b6cb0; color: white; font-size: .8rem; }
+footer { text-align: center; padding: 25px; background: #17324d; color: white; }
+@media (max-width: 750px) { .plans { flex-direction: column; } }
